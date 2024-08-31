@@ -1,0 +1,25 @@
+<div class="w-[180px] mt-7 px-4">
+ <div class="flex justify-center">
+  <div>
+    <div class="flex justify-center">
+      <img src="assets/logo.png" alt="logo">
+    </div>
+    <h1 class="text-center font-bold text-base text-[#0194E6] mt-6">Учебный Центр кольпоскопии доктора Петренко</h1>
+    <hr class="mt-[30px] border-[#80C2FF] pb-9">
+
+    <ul class="border-l border-[#80C2FF] pl-[29px]">
+      @for (item of model; track $index) {
+        <li class="pb-5 last:pb-0">
+          <app-menu-item [label]="item.label" [roterlink]="item.routerlink"></app-menu-item>
+        </li>
+      }
+    </ul>
+
+    <hr class="mb-[30px] border-[#80C2FF] mt-9">
+
+    <p class="font-bold text-base text-[#636363]">{{ phone }}</p>
+
+    <app-button title="Заказать звонок" btnClass="btn-primary small-text" customClass="mt-[15px]"></app-button>
+  </div>
+ </div>
+</div>

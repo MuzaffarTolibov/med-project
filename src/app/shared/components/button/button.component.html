@@ -1,0 +1,9 @@
+<button
+ (click)="clicked.emit($event)"
+ (dblclick)="dbclick.emit('dbclick')"
+ [ngClass]="btnClass"
+ [ngStyle]="customStyle"
+ [class]="customClass"
+>
+  {{ title }}
+</button>
