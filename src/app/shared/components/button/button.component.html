@@ -5,5 +5,8 @@
  [ngStyle]="customStyle"
  [class]="customClass"
 >
+  @if(icon) {
+    <img [src]="imgPath" [alt]="icon">
+  }
   {{ title }}
 </button>

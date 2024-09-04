@@ -2,6 +2,9 @@
   @apply px-5 py-3 bg-[#0089ED] rounded-[10px] text-white;
 }
 
+.btn-icon {
+  @apply bg-[#80C2FF] rounded-[10px]
+}
 
 .small-text {
   @apply text-xs;
