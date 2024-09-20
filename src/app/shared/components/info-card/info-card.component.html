@@ -1,4 +1,22 @@
 <div [ngClass]="cardClass" [class]="customClass" class="pl-[41px] pt-9 pr-12 pb-[60px]">
-
+  <div>
+    <div class="flex justify-between items-start">
+      <p class="text-[#FFFFFF] font-bold text-[22px] min-w-[252px]">{{ title || '' }}</p>
+      @if (moreDetail) {
+        <p class="text-[#FFFFFF] font-medium text-sm cursor-pointer w-[119px]">подробнее ></p>
+      }
+    </div>
+    <div class="border-b border-[#80C2FF] w-full mt-[65px]">
+      <p class="text-[#FFEFEF] font-light text-[80px] leading-[80px] opacity-50">{{ numberCard || '' }}</p>
+    </div>
+    <div class="mt-[21px] flex justify-between">
+      <div>
+        <p class="font-bold text-[24px] text-[#fff]">{{ time || '0' }} часов</p>
+        <p class="font-bold text-base text-[#fff]">({{ days || '0' }} дней)</p>
+      </div>
+      <div>
+        <p class="text-[#fff] font-bold text-[30px]">{{ price | currency:'RUB':'symbol-narrow':'1.2-2' }}</p>
+      </div>
+    </div>
+  </div>
 </div>
-  

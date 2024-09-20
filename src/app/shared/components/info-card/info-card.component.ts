@@ -11,10 +11,10 @@ import { Component, Input } from '@angular/core';
 export class InfoCardComponent {
   @Input() title: string = '';
   @Input() moreDetail: boolean = false;
-  @Input() numberCard: number | undefined;
+  @Input() numberCard: string | undefined;
   @Input() time: string | undefined;
   @Input() days: string | undefined;
-  @Input() price: number | undefined;
+  @Input() price: string | undefined;
   @Input() cardClass: string | undefined;
   @Input() customClass: string = '';
 }

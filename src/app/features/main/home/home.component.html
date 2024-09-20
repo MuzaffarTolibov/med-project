@@ -43,7 +43,14 @@
     </div>
 
     <div class="mt-[62px]">
-      <app-info-card cardClass="sm-card" customClass="bg-[#00B7DF]"></app-info-card>
+      <div class="flex items-center w-full gap-[3px]">
+        <app-info-card cardClass="sm-card" customClass="bg-[#0194E6]" title="Базовый курс кольпоскопии" [moreDetail]="true" numberCard="1" price="40000" time="36" days="6"></app-info-card>
+        <app-info-card cardClass="md-card" customClass="bg-[#00B7DF]" title="Современные аспекты клинической кольпоскопии" [moreDetail]="true" numberCard="2" price="33000" time="36" days="6"></app-info-card>
+      </div>
+      <div class="flex items-center w-full mt-[3px] gap-[3px]">
+        <app-info-card cardClass="md-card" customClass="bg-[#0194E6]" title="Электрорадиоволновая хирургия в амбулаторной гинекологии" [moreDetail]="true" numberCard="3" price="25000" time="18" days="6"></app-info-card>
+        <app-info-card cardClass="sm-card" customClass="bg-[#0194E6]" title="Базовый курс кольпоскопии" [moreDetail]="true" numberCard="4" price="15000" time="18" days="6"></app-info-card>
+      </div>
     </div>
   </div>
 </div>
