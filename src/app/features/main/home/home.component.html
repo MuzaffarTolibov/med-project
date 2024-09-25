@@ -51,13 +51,41 @@
         <app-info-card cardClass="md-card" customClass="bg-[#0194E6]" title="Электрорадиоволновая хирургия в амбулаторной гинекологии" [moreDetail]="true" numberCard="3" price="25000" time="18" days="6"></app-info-card>
         <app-info-card cardClass="sm-card" customClass="bg-[#0194E6]" title="Базовый курс кольпоскопии" [moreDetail]="true" numberCard="4" price="15000" time="18" days="6"></app-info-card>
       </div>
-      <div class="flex items-center">
-        <div class="bg-[#0070C1] max-w-[479px] rounded-[30px] pl-[]">
-          <img src="assets/icons/calendar.svg" alt="calendar">
-          <div>
+      <div class="flex items-center mt-[3px] gap-[3px]">
+        <div class="bg-[#0070C1] max-w-[479px] rounded-[30px] pl-[43px] pt-[28px] pr-[32px] flex">
+          <img src="assets/icons/calendar.svg" alt="calendar" class="mt-5">
+          <div class="pl-[43px]">
             <p class="text-[#FFFFFF] font-bold text-2xl">Расписание занятий</p>
-            <app-button ></app-button>
+            <app-button title="Смотреть" customClass="mt-5" btnClass="btn-white"></app-button>
           </div>
+        </div>
+        <div class="bg-[#DCEEFF] rounded-[30px] pt-[46px] pr-[58px] pl-7 flex w-[630px]">
+          <div class="flex">
+            <img class="pt-3 w-[116px]" src="assets/icons/shapka.svg" alt="shapka">
+            <div>
+              <p class="text-[#000000] font-light text-xs pb-3">форма обучения:</p>
+              <p class="text-[#000000] font-bold text-2xl">очная</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-between ml-[38px]">
+            <img class="pt-3" src="assets/icons/certificate.svg" alt="certificate">
+            <div>
+              <p class="text-[#000000] font-light text-xs pb-3">аттестация:</p>
+              <p class="text-[#000000] font-bold text-2xl">тестовый<br>контроль</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-[128px]">
+      <div class="flex items-start gap-[3px]">
+        <div class="max-w-[432px] w-full bg-[#DCEEFF] py-[37px] pl-[43px] rounded-[30px]">
+          <p class="text-[#000000] font-normal text-2xl">Автотр курса</p>
+          <p class="text-[#000000] font-medium text-3xl pt-[141px]">ПЕТРЕНКО СЕРГЕЙ ИВАНОВИЧ</p>
+        </div>
+        <div>
+          <img src="assets/byvocha.png" alt="byvocha">
         </div>
       </div>
     </div>
