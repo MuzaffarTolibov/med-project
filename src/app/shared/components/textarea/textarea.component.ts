@@ -9,6 +9,8 @@ import { Component, Input } from '@angular/core';
 })
 export class TextareaComponent {
   @Input() customClass: string = '';
-  @Input() placeHolder: string | undefined;
-  @Input() textareaClass: string = ''
+  @Input() placeHolder: string = '';
+  @Input() textareaClass: string = '';
+  @Input() textareaCols: string = '';
+  @Input() textareaRows: string = '';
 }

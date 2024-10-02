@@ -15,24 +15,43 @@
       </div>
     </div>
     <div>
-      <div>
-        <div class="w-[309px]">
-          <app-input placeHolder="Представьтесь" icon="user" inputClass="input-info" customClass="border-b border-[#80C2FF] pb-2"></app-input>
-        </div>
-        <div class="w-[309px] mt-[43px]">
-          <app-input placeHolder="Ваш Email" icon="mail" inputClass="input-info" customClass="border-b border-[#80C2FF] pb-2"></app-input>
-        </div>
+      <div class="flex items-start">
+        <div>
+          <div class="w-[309px]">
+            <app-input placeHolder="Представьтесь" icon="user" inputClass="input-info" customClass="border-b border-[#80C2FF] pb-2"></app-input>
+          </div>
+          <div class="w-[309px] mt-[43px]">
+            <app-input placeHolder="Ваш Email" icon="mail" inputClass="input-info" customClass="border-b border-[#80C2FF] pb-2"></app-input>
+          </div>
 
-        <div class="flex items-start mt-[61px]">
-          <input type="checkbox">
-          <p class="font-normal text-[10px] text-[#000] pl-3">Отправляя заявку, вы принимаете условия <br> политики конфиденциальности</p>
+          <div class="flex items-start mt-[61px]">
+            <input type="checkbox">
+            <p class="font-normal text-[10px] text-[#000] pl-3">Отправляя заявку, вы принимаете условия <br> политики конфиденциальности</p>
+          </div>
+        </div>
+        <div class="ml-[49px]">
+          <div>
+            <app-textarea textareaClass="text-white" customClass="w-[372px]" placeHolder="Напишите ваш вопрос" textareaCols="60" textareaRows="4"></app-textarea>
+          </div>
         </div>
       </div>
-      <div>
-        <div> 
-          <app-textarea></app-textarea>
+      <div class="mt-[85px]">
+        <div class="max-w-[793px] w-full rounded-[30px] bg-[#003C67] pt-[25px] pl-[50px] pr-[62px] pb-[43px]">
+          <div>
+            <p>+7 861 201-22-03</p>
+            <div>
+              <img src="assets/icons/geolocation.svg" alt="geo">
+              <p>г. Краснодар, пр-т Чекистов, д. 42</p>
+            </div>
+            <div>
+              <img src="assets/icons/inst.svg" alt="">
+              <img src="assets/icons/whatsapp" alt="">
+              <img src="assets/icons/telegram.svg" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
