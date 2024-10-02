@@ -1,13 +1,37 @@
 <div class="bg-[#DCF0FF]">
-  <div class="pt-[78px] pl-[240px]">
+  <div class="pt-[78px] pl-[240px] flex ">
     <div>
       <p class="text-[#000000] font-bold text-xl">Задать вопрос</p>
       <p class="text-[#000000] font-light text-sm mt-[141px]">получите индивидуальные<br>условия обучения</p>
-      <div class="bg-[#0194E6] pt-[25px] pl-[33px] max-w-[303px] w-full rounded-t-[30px]">
+      <div class="bg-[#0194E6] pt-[25px] pl-[33px] max-w-[303px] w-full rounded-t-[30px] mt-[70px]">
         <div>
           <img src="assets/logo.png" alt="logo">
         </div>
         <p class="text-[#FFFFFF] text-lg w-[204px] font-bold leading-[20.79px]">Учебный Центр кольпоскопии доктора Петренко</p>
+        <hr class="border-[#80C2FF] mt-[28px] mb-[19px]">
+
+        <p class="font-normal text-xs text-[#fff] mb-2">ООО «Центр кольпоскопии и цервикальной патологии»</p>
+        <p class="text-[#81C3FF] text-xs font-normal">Условия конфиденциальности предоставления и защиты информации</p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div class="w-[309px]">
+          <app-input placeHolder="Представьтесь" icon="user" inputClass="input-info" customClass="border-b border-[#80C2FF] pb-2"></app-input>
+        </div>
+        <div class="w-[309px] mt-[43px]">
+          <app-input placeHolder="Ваш Email" icon="mail" inputClass="input-info" customClass="border-b border-[#80C2FF] pb-2"></app-input>
+        </div>
+
+        <div class="flex items-start mt-[61px]">
+          <input type="checkbox">
+          <p class="font-normal text-[10px] text-[#000] pl-3">Отправляя заявку, вы принимаете условия <br> политики конфиденциальности</p>
+        </div>
+      </div>
+      <div>
+        <div> 
+          <app-textarea></app-textarea>
+        </div>
       </div>
     </div>
   </div>

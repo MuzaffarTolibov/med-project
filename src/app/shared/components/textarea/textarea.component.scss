@@ -1,0 +1,7 @@
+.text-white {
+  @apply bg-white pt-[13px] pl-4 rounded-[5px] text-[#000] font-normal text-sm border border-[#80C2FF];
+}
+
+.text-white::placeholder {
+  color: #000;
+}

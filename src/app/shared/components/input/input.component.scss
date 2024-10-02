@@ -5,3 +5,11 @@
 .input-primary::placeholder {
   color: #fff;
 }
+
+.input-info {
+  @apply bg-transparent outline-none text-[#000000] w-full font-normal text-[14px]
+}
+
+.input-info::placeholder {
+  color: #000;
+}
