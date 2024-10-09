@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,6 +10,7 @@ import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angula
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+  readonly router: Router = inject(Router);
   form = new FormGroup<any>({
     login: new FormControl('', [Validators.required, Validators.minLength(4)]),
     password: new FormControl('', [Validators.required, Validators.minLength(4)]),
@@ -16,6 +18,7 @@ export class LoginComponent {
   constructor() {}
 
   login() {
-    console.log(this.form.value);
+    localStorage.setItem('userLoginAndPassword', JSON.stringify(this.form.value))
+    this.router.navigate(["/"]).catch()
   }
 }

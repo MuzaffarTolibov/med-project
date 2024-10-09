@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItemComponent } from "./menu-item/menu-item.component";
 import { ButtonComponent } from "../../components/button/button.component";
+import { Router } from '@angular/router';
 
 interface MenuItem {
   label: string;
@@ -18,7 +19,7 @@ export class MenuComponent implements OnInit {
   model: MenuItem[] = [];
   phone: string = '+7 861 201-22-03';
 
-  constructor() {}
+  constructor(private readonly router: Router) {}
 
   ngOnInit(): void {
     this.model = [
@@ -67,5 +68,10 @@ export class MenuComponent implements OnInit {
         routerlink: '/'
       }
     ]
+  }
+
+  logout() {
+    localStorage.removeItem('userLoginAndPassword');
+    this.router.navigate(['/login']).catch();
   }
 }
