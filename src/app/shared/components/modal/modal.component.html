@@ -1,1 +1,41 @@
-<p>modal works!</p>
+<div class="fixed inset-0 flex items-center justify-center bg-white/10 backdrop-blur-[6px]">
+  <div class="bg-[#0194E6] text-white rounded-lg p-8 w-96 relative">
+    <button class="absolute top-4 right-4 text-white hover:text-gray-300">
+      &times;
+    </button>
+
+    <h2 class="text-lg font-semibold mb-4">Заказать звонок</h2>
+    <p class="text-sm mb-6">Мы перезвоним в течение часа</p>
+
+    <form>
+      <div class="mb-4">
+        <label for="name" class="block text-sm mb-2">Представьтесь</label>
+        <div class="flex items-center border-b border-white py-2">
+          <svg class="h-5 w-5 text-white mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A3 3 0 117 14a3 3 0 011.879-.704M12 14v5m-1-2h2m0 0H9m3 0v1m-2 0H7v1m4-1H9" />
+          </svg>
+          <input type="text" id="name" placeholder="Представьтесь" class="bg-transparent text-white placeholder-white focus:outline-none w-full">
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label for="phone" class="block text-sm mb-2">Ваш Телефон</label>
+        <div class="flex items-center border-b border-white py-2">
+          <svg class="h-5 w-5 text-white mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l7.292 7.292a1 1 0 001.416-1.416L5.414 4H19a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V5c0-.552.224-1.052.586-1.414L2.293 3.293a1 1 0 00-.708-.293H2a1 1 0 00-1 1v10a1 1 0 001 1h5.293L12 18v2H5a3 3 0 01-3-3V6z" />
+          </svg>
+          <input type="tel" id="phone" placeholder="Ваш Телефон" class="bg-transparent text-white placeholder-white focus:outline-none w-full">
+        </div>
+      </div>
+
+      <div class="flex items-center mb-4">
+        <input id="agreement" type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-0 focus:ring-offset-0">
+        <label for="agreement" class="ml-2 text-sm">Согласен(а) с условиями политики конфиденциальности</label>
+      </div>
+
+      <button type="submit" class="bg-white text-blue-500 font-bold py-2 px-4 rounded w-full hover:bg-gray-100">
+        Заказать
+      </button>
+    </form>
+  </div>
+</div>
