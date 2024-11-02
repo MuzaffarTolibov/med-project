@@ -56,7 +56,7 @@
           <img src="assets/icons/calendar.svg" alt="calendar" class="mt-5">
           <div class="pl-[43px]">
             <p class="text-[#FFFFFF] font-bold text-2xl">Расписание занятий</p>
-            <app-button title="Смотреть" customClass="mt-5" btnClass="btn-white"></app-button>
+            <app-button (clicked)="openModal()" title="Смотреть" customClass="mt-5" btnClass="btn-white"></app-button>
           </div>
         </div>
         <div class="bg-[#DCEEFF] rounded-[30px] pt-[46px] pr-[58px] pl-7 flex w-[630px]">
@@ -100,4 +100,6 @@
   </div>
 </div>
 
-<app-modal></app-modal>
+@if (isOpen) {
+  <app-modal></app-modal>
+}

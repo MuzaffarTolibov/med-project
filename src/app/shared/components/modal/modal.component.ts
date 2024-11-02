@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalService } from '../../../core/service/modal.service';
 
 @Component({
   selector: 'app-modal',
@@ -9,4 +10,12 @@ import { Component } from '@angular/core';
 })
 export class ModalComponent {
 
+  constructor(private readonly modalServise: ModalService) {
+
+  }
+
+
+  closeModal() {
+    this.modalServise.openModal(false)
+  }
 }

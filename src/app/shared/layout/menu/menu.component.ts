@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItemComponent } from "./menu-item/menu-item.component";
 import { ButtonComponent } from "../../components/button/button.component";
 import { Router } from '@angular/router';
+import { ModalService } from '../../../core/service/modal.service';
 
 interface MenuItem {
   label: string;
@@ -13,13 +14,17 @@ interface MenuItem {
   standalone: true,
   imports: [MenuItemComponent, ButtonComponent],
   templateUrl: './menu.component.html',
-  styleUrl: './menu.component.scss'
+  styleUrl: './menu.component.scss',
+  providers: [ModalService]
 })
 export class MenuComponent implements OnInit {
   model: MenuItem[] = [];
   phone: string = '+7 861 201-22-03';
 
-  constructor(private readonly router: Router) {}
+  constructor(
+    private readonly router: Router,
+    private readonly modalService: ModalService
+  ) {}
 
   ngOnInit(): void {
     this.model = [
@@ -68,6 +73,10 @@ export class MenuComponent implements OnInit {
         routerlink: '/'
       }
     ]
+  }
+
+  openModal() {
+    this.modalService.openModal(true)
   }
 
   logout() {
